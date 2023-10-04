@@ -1,0 +1,296 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #000;
+    color: #fff;
+}
+.header{
+    width: 1520px;
+    height: 700px;
+    background-image: linear-gradient(rgba(0,0,0,0.7) , rgba(0,0,0,0.7)), url(headerimage.jpg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+nav button{
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.language-butn{
+    
+    display: inline-flex;
+    background: transparent;
+    border: 1px solid#fff;
+    padding: 7px 10px;
+    align-items: center;
+}
+
+.language-butn i{
+    width: 10px;
+}
+.header-c{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+}
+.header-c h1{
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: 600;
+ 
+    max-width: 2000px;
+}
+.header-c h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.signup{
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+    
+}
+.signup input {
+    flex: 1;
+    border: 2px;
+    outline: 2;
+    margin-left: 20px;
+    
+    
+
+}
+.signup button{
+    background: #db0001;
+    border: 2%;
+    outline: 2%;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+    border-radius: 4px;
+     
+}
+.features{
+    padding: 50px 12px;
+    font-size: 21px;
+
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+
+
+}
+.text-col{
+    padding-left: 200px;
+    flex-basis: 50%;
+    margin-bottom: 40px;
+    
+
+}
+.text-col h2{
+    font-size: 50px;
+}
+.img-col{
+    
+    margin-bottom: 20px;
+    flex-basis: 40%;
+    
+
+
+}
+.img-col img{
+    display: block;
+    width: 500px;
+    margin: auto;
+}
+
+.faq{
+    padding: 10px 12%;
+    font-size: 18px;
+    text-align: center;
+}
+.faq h2{
+    font-size: 40px;
+    font-weight: 700;
+
+}
+.accordion{
+    margin: 20px auto;
+    width: 100%;
+    max-width: 2000px;
+}
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    font-size: 24px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 0.5px;
+    cursor: pointer;
+    position: relative;
+
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordion .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    font-size: 24px;
+    font-weight: 500;
+    transition: max-height 0.5s,padding 0.5s;
+
+
+}
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+
+}
+
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+.footer{
+    padding:50px 15% 10px;
+    border-top: 6px solid#333;
+    color: #777;
+
+}
+.footer h2{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.footer .col {
+    flex-basis: 25%;
+    flex-grow: 10;
+    margin-bottom: 20px;
+
+}
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+
+
+}
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+}
+.footer .language-butn{
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+ .footer .copyright-text{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+@media only screen and (max-width:500px){
+    .logo{
+        width: 500px;
+
+    }
+    .header-c h1{
+        font-size: 60px;
+    }
+     nav button{
+        padding:5px 10px;
+    }
+    nav .language-butn{
+        padding: 4px 8px;
+    }
+        .header-c{
+            position: unset;
+            transform: none;
+            padding-top: 150px;
+
+        }
+    
+    .header-c h1{
+        font-size: 30px;
+
+    }
+    .signup button{
+        font-size: 12px;
+        padding: 10px 15px;
+
+    }
+    .text-col, .img-col{
+        flex-basis: 100%;
+
+    }
+    .features h2{
+        font-size: 30px;
+
+
+    }
+    .features p{
+        font-size: 15;
+    }
+
+
+    
+
+
+
+
+ 
+}
